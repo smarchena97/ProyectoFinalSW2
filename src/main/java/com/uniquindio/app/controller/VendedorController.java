@@ -1,5 +1,6 @@
 package com.uniquindio.app.controller;
 
+<<<<<<< HEAD
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.uniquindio.app.model.entity.Usuario;
 import com.uniquindio.app.model.entity.Vendedor;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 import com.uniquindio.app.model.service.IVendedorService;
 
 @Controller
@@ -29,6 +37,7 @@ public class VendedorController {
 		return "listarVendedores";
 		
 	}
+<<<<<<< HEAD
 	
 	@RequestMapping(value = "/formvendedor")
 	public String crearVendedor(Model model) {
@@ -72,5 +81,7 @@ public class VendedorController {
 		}
 		return "redirect:/listarvendedores";
 	}
+=======
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 
 }

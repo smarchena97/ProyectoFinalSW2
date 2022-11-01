@@ -24,7 +24,11 @@ public class UsuarioController {
 	@GetMapping(value = "/listarusuarios")
 	public String listarUsuarios(Model model) {
 		
+<<<<<<< HEAD
 		model.addAttribute("titulo", "Lista de Usuarios Registrados");
+=======
+		model.addAttribute("Titulo", "Lista de Usuarios Registrados");
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 		model.addAttribute("usuarios", usuarioService.listarUsuarios());
 		return "listarUsuarios";
 	}
@@ -45,7 +49,11 @@ public class UsuarioController {
 		}
 		
 		usuarioService.save(usuario);
+<<<<<<< HEAD
 		return "redirect:listarusuarios";
+=======
+		return "redirect:listarUsuarios";
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 	}
 	
 	@RequestMapping(value = "/formusuario/{id}")
@@ -55,7 +63,11 @@ public class UsuarioController {
 		if(id > 0) {
 			usuario = usuarioService.buscarUno(id);
 		}else {
+<<<<<<< HEAD
 			return "redirect:/listarusuarios";
+=======
+			return "redirect:/listarUsuarios";
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 		}
 		model.addAttribute("usuario", usuario);
 		model.addAttribute("titulo", "Editar usuario");
@@ -68,7 +80,11 @@ public class UsuarioController {
 		if(id > 0) {
 			usuarioService.delete(id);
 		}
+<<<<<<< HEAD
 		return "redirect:/listarusuarios";
+=======
+		return "redirect:/listarUsuarios";
+>>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 	}
 
 }
