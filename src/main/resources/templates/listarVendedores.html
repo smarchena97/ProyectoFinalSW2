@@ -24,25 +24,18 @@
 				</a></li>
 				<li class="nav-item"><a class="nav-link" th:href="@{/listar}">Productos</a>
 				</li>
-<<<<<<< HEAD
 				<li class="nav-item"><a class="nav-link" th:href="@{/listarusuarios}">Usuarios</a></li>
 				<li class="nav-item"><a class="nav-link" th:href="@{/listarvendedores}">Vendedores</a></li>
-=======
 				<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
 				<li class="nav-item"><a class="nav-link disabled" href="#"
 					tabindex="-1" aria-disabled="true">Disabled</a></li>
->>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 			</ul>
 		</div>
 	</nav>
 	
 	<div class="container">
 		<h1 th:text="${titulo}"></h1>
-<<<<<<< HEAD
 		<a th:href="@{/formvendedor}">crear vendedor</a>
-=======
-
->>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 		<table class="table">
 			<thead>
 				<tr>
@@ -62,13 +55,8 @@
 					<td th:text="${vendedor.direccion}"></td>
 					<td th:text="${vendedor.cargo}"></td>
 					<td th:text="${vendedor.telefono}"></td>
-<<<<<<< HEAD
 					<td><a class="btn btn-danger btn-xs" th:href="@{/eliminarvendedor/} + ${vendedor.id}" th:onclick="return confirm('Quieres eliminar este vendedor?');">Eliminar</a></td>
 					<td><a class="btn btn-primary btn-xs" th:href="@{/formvendedor/} + ${vendedor.id}">Editar</a></td>
-=======
-					<td><a class="btn btn-danger btn-xs" th:onclick="return confirm('Quieres eliminar este producto?');">Eliminar</a></td>
-					<td><a class="btn btn-primary btn-xs" >Editar</a></td>
->>>>>>> 2e0862f286c6764dbd6165b4c7a5a2ef2b651dc9
 				</tr>
 			</tbody>
 		</table>
