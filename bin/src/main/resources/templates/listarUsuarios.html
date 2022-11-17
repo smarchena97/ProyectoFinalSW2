@@ -24,6 +24,7 @@
 				</a></li>
 				<li class="nav-item"><a class="nav-link" th:href="@{/listar}">Productos</a>
 				</li>
+				<li class="nav-item"><a class="nav-link" href="@{/listarusuarios}">Usuarios</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
 				<li class="nav-item"><a class="nav-link disabled" href="#"
 					tabindex="-1" aria-disabled="true">Disabled</a></li>
@@ -33,7 +34,7 @@
 
 	<div class="container">
 		<h1 th:text="${titulo}"></h1>
-
+		<a th:href="@{/formusuario}">crear usuario</a>
 		<table class="table">
 			<thead>
 				<tr>
@@ -53,7 +54,7 @@
 					<td th:text="${usuario.apellidos}"></td>
 					<td th:text="${usuario.email}"></td>
 					<td th:text="${usuario.direccion}"></td>
-					<td><a class="btn btn-danger btn-xs" th:href="@{/eliminarusuario/} + ${usuario.id}" th:onclick="return confirm('Quieres eliminar este producto?');">Eliminar</a></td>
+					<td><a class="btn btn-danger btn-xs" th:href="@{/eliminarusuario/} + ${usuario.id}" th:onclick="return confirm('Quieres eliminar este usuario?');">Eliminar</a></td>
 					<td><a class="btn btn-primary btn-xs" th:href="@{/formusuario/} + ${usuario.id}">Editar</a></td>
 				</tr>
 			</tbody>
